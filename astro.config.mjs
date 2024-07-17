@@ -10,7 +10,7 @@ import config from "./src/config/config.json";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://webvs2.github.io',
+  site: 'https://webvs2.github.io/astroplate',
   base:  "./",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: {
