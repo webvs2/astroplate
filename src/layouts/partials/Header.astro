@@ -26,8 +26,8 @@ const { pathname } = Astro.url;
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
-      我叫logo
-      <!-- <Logo /> -->
+      <!-- 我叫logo -->
+      <Logo />
     </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
@@ -60,7 +60,7 @@ const { pathname } = Astro.url;
                   class={`nav-link inline-flex items-center ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
                     menu.children
-                      ?.map(({ url }) => `${url}/`)
+                      ?.map(({ url }) => `${import.meta.env.PUBLIC_STRAPI_URL}${url}/`)
                       .includes(pathname)
                       ? "active"
                       : ""
@@ -75,10 +75,10 @@ const { pathname } = Astro.url;
                   {menu.children?.map((child) => (
                     <li class="nav-dropdown-item">
                       <a
-                        href={child.url}
+                        href={'/'+import.meta.env.PUBLIC_STRAPI_URL+child.url}
                         aria-label={child.name}
                         class={`nav-dropdown-link block ${
-                          (pathname === `${child.url}/` ||
+                          (pathname === `${child.url}` ||
                             pathname === child.url) &&
                           "active"
                         }`}
@@ -92,7 +92,7 @@ const { pathname } = Astro.url;
             ) : (
               <li class="nav-item">
                 <a
-                  href={menu.url}
+                  href={`/${import.meta.env.PUBLIC_STRAPI_URL}${menu.url}`}
                   class={`nav-link block ${
                     (pathname === `${menu.url}/` || pathname === menu.url) &&
                     "active"

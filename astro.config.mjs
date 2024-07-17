@@ -11,7 +11,7 @@ import config from "./src/config/config.json";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://webvs2.github.io',
-  base:  "astroplate",
+  base: 'astroplate' ,
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: {
     service: squooshImageService(),
