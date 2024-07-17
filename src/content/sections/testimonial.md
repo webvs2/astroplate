@@ -1,7 +1,7 @@
 ---
 enable: true
-title: "What Users Are Saying About Astroplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Astroplate."
+title: "留言板"
+description: "好好留言，拳头警告！"
 
 # Testimonials
 testimonials:
