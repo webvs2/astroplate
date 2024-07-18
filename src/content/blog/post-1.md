@@ -2,15 +2,15 @@
 title: "这是我第一篇文章"
 meta_title: ""
 description: "this is meta description"
-date: 2022-04-04T05:00:00Z
-image: "/images/blog/fff359890e85bd41aeeb2ad8173afad.jpg"
+date: 2022-07-14 
+image: "/images/blog/1721283263285.jpg"
 categories: ["Application", "Data"]
-author: "John Doe"
+author: "pengpeng"
 tags: ["生活", "开心"]
 draft: false
 ---
 ## 文章
-我看见一个特别搞笑的，是关于男生女生生气的，哎呀，打字好累 
+这是我的好友-小涛，她是一个很厉害的前端开发。
 
 
 
